@@ -83,7 +83,7 @@ them in parent class but we can do so in case of text */
     margin-top: 5%;
     flex-direction: row;
     justify-content: flex-end;
-    color: rgb(96, 204, 191);
+    color: rgb(114, 250, 234);
     /* color: rgb(114, 250, 234); */
     /* background-color: rgb(17, 16, 16); */
     
@@ -93,10 +93,10 @@ them in parent class but we can do so in case of text */
 
 /* viewport -> intro -> intro-txt  */
 @keyframes fadein{
-    0% {color: black; box-shadow: none;}
+    0% {color: black;}
     
     100% {color:  rgb(114, 250, 234);
-        text-shadow: 2px 2px rgb(66, 66, 66);
+        /* text-shadow: 2px 2px rgb(66, 66, 66); */
     }
 }
 .intro-txt{
@@ -110,7 +110,7 @@ them in parent class but we can do so in case of text */
     align-self: flex-start;
     /* margin-top: 100px; */
     height: 400px;
-    text-shadow: 2px 2px rgb(66, 66, 66);
+    /* text-shadow: 2px 2px rgb(66, 66, 66); */
     /* transition: color 4s linear; */
     
 
@@ -119,15 +119,15 @@ them in parent class but we can do so in case of text */
     font-family: 'Righteous', cursive;
     font-weight: 400;
     /* color: rgb(245, 105, 54); */
-    color: orangered;
-    text-shadow: 3px 3px rgb(66, 66, 66);
-    
+    color: rgb(255, 60, 0);
+    /* text-shadow: 3px 3px rgb(66, 66, 66); */
+    /* transition: all 4s linear; */
     
     
 }
 #txt1{
     font-size: 30px;
-    animation: fadein 2.5s linear 0s 1 normal forwards;
+    animation: fadein 5.5s linear 0s 1 normal forwards;
 
     
 }
@@ -140,8 +140,8 @@ them in parent class but we can do so in case of text */
 #txt3{
     font-size: 20px;
     /* animation: fadein 4s linear 2s 1 normal none; */
-    color: rgb(0, 255, 128);
-
+    /* color: rgb(0, 255, 136); */
+    color: rgb(227, 234, 240);
 }
 /* viewport -> intro -> intro-img  */
 .intro-img{
@@ -157,9 +157,6 @@ them in parent class but we can do so in case of text */
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    /* font-size: 30px; */
-    /* margin-top: 50px; */
-
     
 }
 
@@ -167,15 +164,16 @@ them in parent class but we can do so in case of text */
 /* skills */
 .skills-page{
     display: flex;
-    border: 2px solid violet;
+    /* border: 2px solid violet; */
     flex-direction: column;
     /* justify-content: space-evenly; */
+    margin-top: 100px;
     
 }
-.skills-page > p{
+.skills-page > p, .projects > p{
     align-self: center;
-    color: rgb(248, 84, 24);
-    text-shadow: 3px 3px 1px rgb(66, 66, 66);
+    color: rgb(255, 60, 0);
+    /* text-shadow: 3px 3px 1px rgb(66, 66, 66); */
     font-size: 40px ;
 }
 .skills-page-content{
@@ -185,18 +183,19 @@ them in parent class but we can do so in case of text */
 
 }
 .skills-graph{
-    text-shadow: 1px 1px 1px rgb(66, 66, 66);
+    /* text-shadow: 1px 1px 1px rgb(66, 66, 66); */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     width: 30%;
     /* border: 2px solid red; */
-    color: rgb(248, 84, 24);
+    color: rgb(255, 60, 0);
+    font-size: 20px;
     border: 2px solid black;
     /* margin-top: 100px; */
 }
 .skills-graph > p{
-    /* margin-bottom: 10px; */
+   margin-top: auto;
 }
 .skills-img{
     display: flex;
@@ -210,6 +209,9 @@ them in parent class but we can do so in case of text */
     width: 130%;
 
 }
+.skills-page-title{
+    margin-bottom: 50px;
+}
 
 .container {
     /* display: flex; */
@@ -217,12 +219,13 @@ them in parent class but we can do so in case of text */
      /* Grey background */
     background-color: rgb(207, 203, 197);
     margin-bottom: 10px;
-    border: 1px groove orangered;
+    border: 1px groove rgb(114, 250, 234);
     border-radius: 10px;
-    box-shadow: 2px 4px 2px rgb(66, 66, 66);
+    box-shadow: 2px 0px 2px rgb(66, 66, 66);
     overflow: hidden;
     height: 20px;
     align-items: center;
+   
     
   }
 
@@ -240,7 +243,7 @@ them in parent class but we can do so in case of text */
 
 .html,.css,.js,.django{
     color: rgb(255, 51, 0);
-    background-color:rgb(102, 218, 204);
+    background-color:rgb(114, 250, 234);
     /* margin-right: 2px; */
     /* transition: all 2s linear; */
     border-radius: 10px;
@@ -271,7 +274,14 @@ them in parent class but we can do so in case of text */
     border: 2px solid black;
     justify-content: space-evenly;
     margin-top: 100px;
+    color: rgb(255, 51, 0);
+    justify-content: space-between;
     
+    
+}
+.projects > p{
+    margin-bottom: 50px;
+
 }
 .projects-sample{
     display: flex;
@@ -296,17 +306,38 @@ them in parent class but we can do so in case of text */
 /* about */
 .about{
     width: 100%;
-    border: 2px solid green;
-    height: 200px;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 100px;
     
+}
+.about > p:first-child{
+    font-size: 40px;
+    color:  rgb(255, 60, 0);
+    margin-bottom: 50px;
+
 }
 
 /* contact */
 .contact{
     width: 100%;
-    border: 2px solid blue;
-    height: 200px;
-    
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    align-items: center;
+    margin-top: 100px;   
+    color: white;
+
+}
+.contact > p:first-child{
+    font-size: 40px;
+    color:  rgb(255, 60, 0);
+    margin-bottom: 50px;
 
 }
 
@@ -315,10 +346,14 @@ them in parent class but we can do so in case of text */
 .footer{
     display: flex;
     width: 100%;
-    height: 50px;
-    background-color: rgb(204, 146, 146);
+    height: 20px;
+    /* background-color: rgb(204, 146, 146); */
     justify-content: center;
     align-items: center;
-    
+    margin-top: 100px;
+    border-top: 1px solid rgb(102, 218, 204);
+    color: white;
+    font-size: 10px;
+    letter-spacing: 2px;
 
 }
