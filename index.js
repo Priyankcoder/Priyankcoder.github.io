@@ -27,7 +27,7 @@ navLink.forEach((item) => item.addEventListener("click", colortoggler))
 
 var i = 0;
 var txt = `PRIYANK RASTOGI.`; /* The text */
-var speed = 100; /* The speed/duration of the effect in milliseconds */
+var speed = 300; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {
   if (i < txt.length) {
