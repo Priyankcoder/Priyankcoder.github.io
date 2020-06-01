@@ -3,18 +3,29 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Roboto Slab', serif;
-    /*  
-#name font-family: 'Righteous', cursive;
-#rest font-family: 'Roboto Slab', serif;
- #txt font-family: 'Raleway', sans-serif;
-    */
 
-
+/* alternate: rgb(68, 150, 140)  gs*/
+/* rgb(114, 250, 234) bs*/
 
 }
 
+#name,.skills-page > p, .projects > p, .skills-graph
+.html,.css,.js,.django,.projects,.about > p:first-child,
+.contact-text> p:first-child,.skills-graph>p
+{
+   
+    color: rgb(0, 199, 176);
+
+}
+
+.nav > div > a, #txt3, .about, .contact, .footer{
+    color: white
+}
+
+
 .site{
     background-color: black;
+    /* background-color: aliceblue; */
 }
 
 
@@ -24,11 +35,8 @@
     flex-direction: column;
     margin: 0 auto;
     width: 90%;
-    /* height: 1000px; */
-    /* background-color: aqua; */
-    /* border: 2px solid red; */
-    /* background-color: rgb(17, 16, 16); */
     background-color: black;
+    /* background-color: rgb(216, 224, 231); */
 }
 
 /* Navigation Bar */
@@ -46,10 +54,13 @@
     border-radius: 10px;
 
 }
+
 /* > sign use to access real child 
 (not grand child) of parent*/
 .nav > div{
     margin-right: 100px;
+    transition: all 2s linear;
+
 }
 .nav > div:nth-last-of-type(1){
     margin-right: 0px;
@@ -59,7 +70,6 @@ them in parent class but we can do so in case of text */
 .nav > div > a{
     text-decoration: none;
     /* color: rgb(114, 250, 234); */
-    color: aliceblue;
 }
  /* .nav a:active{
     border-top: 3px solid rgb(102, 218, 204);
@@ -114,34 +124,26 @@ them in parent class but we can do so in case of text */
     /* transition: color 4s linear; */
     
 
+    color: rgb(0, 199, 176);
 }
 #name{
     font-family: 'Righteous', cursive;
     font-weight: 400;
-    /* color: rgb(245, 105, 54); */
-    color: rgb(255, 60, 0);
-    /* text-shadow: 3px 3px rgb(66, 66, 66); */
-    /* transition: all 4s linear; */
-    
     
 }
 #txt1{
     font-size: 30px;
     animation: fadein 5.5s linear 0s 1 normal forwards;
 
-    
 }
 #txt2{
     font-size: 50px;
-    /* margin-top: 10px; */
     margin-top: 10px;
-    
+
 }
 #txt3{
     font-size: 20px;
-    /* animation: fadein 4s linear 2s 1 normal none; */
-    /* color: rgb(0, 255, 136); */
-    color: rgb(227, 234, 240);
+
 }
 /* viewport -> intro -> intro-img  */
 .intro-img{
@@ -172,9 +174,8 @@ them in parent class but we can do so in case of text */
 }
 .skills-page > p, .projects > p{
     align-self: center;
-    color: rgb(255, 60, 0);
-    /* text-shadow: 3px 3px 1px rgb(66, 66, 66); */
     font-size: 40px ;
+    border-bottom: 1px solid rgb(68, 150, 140);
 }
 .skills-page-content{
     display: flex;
@@ -183,24 +184,21 @@ them in parent class but we can do so in case of text */
 
 }
 .skills-graph{
-    /* text-shadow: 1px 1px 1px rgb(66, 66, 66); */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     width: 30%;
-    /* border: 2px solid red; */
-    color: rgb(255, 60, 0);
     font-size: 20px;
     border: 2px solid black;
-    /* margin-top: 100px; */
+    
 }
 .skills-graph > p{
    margin-top: auto;
+
 }
 .skills-img{
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
     width: 60%;
     overflow: hidden;
     align-items: center;
@@ -214,10 +212,9 @@ them in parent class but we can do so in case of text */
 }
 
 .container {
-    /* display: flex; */
-    width: 100%; /* Full width */
-     /* Grey background */
-    background-color: rgb(207, 203, 197);
+    display: flex;
+    width: 100%; 
+    background-color: rgb(226, 224, 224);
     margin-bottom: 10px;
     border: 1px groove rgb(114, 250, 234);
     border-radius: 10px;
@@ -225,27 +222,19 @@ them in parent class but we can do so in case of text */
     overflow: hidden;
     height: 20px;
     align-items: center;
-   
+     
     
   }
 
 .skills {
-    /* display: flex; */
     width: 100%;
-    text-align: right; /* Right-align text */
-    /* padding-top: 5px;  */
-    /* padding-bottom: 5px;  */
-        /* border: 2px solid navy; */
+    text-align: right;
     height: 20px;
     
-  
   }
 
 .html,.css,.js,.django{
-    color: rgb(255, 51, 0);
     background-color:rgb(114, 250, 234);
-    /* margin-right: 2px; */
-    /* transition: all 2s linear; */
     border-radius: 10px;
     box-shadow: 4px 0px 1px rgb(66, 66, 66);
     font-size: 15px;
@@ -266,7 +255,6 @@ them in parent class but we can do so in case of text */
 }
 
 
-/* projects*/
 .projects{
     display: flex;
     flex-direction: column;
@@ -274,7 +262,6 @@ them in parent class but we can do so in case of text */
     border: 2px solid black;
     justify-content: space-evenly;
     margin-top: 100px;
-    color: rgb(255, 51, 0);
     justify-content: space-between;
     
     
@@ -306,10 +293,8 @@ them in parent class but we can do so in case of text */
 /* about */
 .about{
     width: 100%;
-    /* border: 2px solid green; */
     display: flex;
     flex-direction: column;
-    color: aliceblue;
     align-items: center;
     justify-content: space-evenly;
     margin-top: 100px;
@@ -317,9 +302,13 @@ them in parent class but we can do so in case of text */
 }
 .about > p:first-child{
     font-size: 40px;
-    color:  rgb(255, 60, 0);
     margin-bottom: 50px;
+    border-bottom: 1px solid rgb(68, 150, 140);
 
+}
+.about a{
+    
+    color: rgb(114, 250, 234);
 }
 
 /* contact */
@@ -327,19 +316,81 @@ them in parent class but we can do so in case of text */
     width: 100%;
     /* border: 2px solid blue; */
     display: flex;
-    flex-direction: column;
+    flex-direction: horizontal;
     justify-content: space-evenly; 
     align-items: center;
     margin-top: 100px;   
-    color: white;
 
 }
-.contact > p:first-child{
+.contact-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%
+}
+.contact-text> p:first-of-type{
     font-size: 40px;
-    color:  rgb(255, 60, 0);
     margin-bottom: 50px;
+    border-bottom: 1px solid rgb(68, 150, 140);
+    text-align: left;
+    width: fit-content;
+}
+.contact-img{
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    width: 60%
+}
+.mail{
+    width: 100px;
+    border: 2px solid rgb(114, 250, 234);
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0px 6px rgb(31, 105, 97);
+    transition: all 0.2s ease-in-out;
+   
+}
+.mail:active{
+    transform: translateY(5px);
+    box-shadow: 0px 0px rgb(31, 105, 97);
+    border: 2px solid black;
+}
+.mail a{
+    text-decoration: none;
+    color: rgb(114, 250, 234);
+}
+
+#cimg{
+    width: 200%;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+.social{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* border: 2px solid blue; */
+    margin-top: 100px;
+    
 
 }
+.insta, .github, .linkedin{
+    display: flex;
+    width: 3%;
+    justify-content: center;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.social img{
+    width: 100%;
+
+}
+.insta{
+    margin-right: none;
+}
+
 
 
 /* Footer */
@@ -350,9 +401,8 @@ them in parent class but we can do so in case of text */
     /* background-color: rgb(204, 146, 146); */
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 20px;
     border-top: 1px solid rgb(102, 218, 204);
-    color: white;
     font-size: 10px;
     letter-spacing: 2px;
 
