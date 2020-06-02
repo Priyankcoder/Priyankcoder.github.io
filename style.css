@@ -542,7 +542,7 @@ them in parent class but we can do so in case of text */
     width: 100%;
     display: flex;
     justify-content: center;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     margin-top: 100px;
     
 
