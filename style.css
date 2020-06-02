@@ -366,6 +366,7 @@ them in parent class but we can do so in case of text */
     align-self: center;
     font-size: 40px ;
     border-bottom: 1px solid rgb(68, 150, 140);
+    margin-top: 70px;
 }
 .skills-page-content{
     display: flex;
@@ -380,6 +381,7 @@ them in parent class but we can do so in case of text */
 
 .skills-page-title{
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .container {
