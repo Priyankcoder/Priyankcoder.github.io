@@ -96,6 +96,7 @@
         
     }
     
+    
 
 }
 
@@ -178,7 +179,7 @@
     }
     .insta, .github, .linkedin{
         display: flex;
-        width: 3%;
+        width: 5%;
         justify-content: center;
         overflow: hidden;
         margin-right: 20px;
@@ -306,10 +307,10 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
     background-color: black;
+    align-items: center;
     
-   
 }
 
 /* Navigation Bar */
@@ -320,6 +321,7 @@
     width: 90%;
     position: fixed;
     height: 50px;
+    color: rgb(114, 250, 234); 
     background-color: rgb(19, 17, 17);
     text-decoration: none;
     border: 1px solid 
@@ -330,10 +332,6 @@
 
 /* > sign use to access real child 
 (not grand child) of parent*/
-.nav > div{
-    transition: all 2s linear;
-
-}
 .nav > div:nth-last-of-type(1){
     margin-right: 0px;
 }
@@ -341,7 +339,7 @@
 them in parent class but we can do so in case of text */
 .nav > div > a{
     text-decoration: none;
-    /* color: rgb(114, 250, 234); */
+
 }
 
 .nav > div:first-of-type a{ 
@@ -363,9 +361,7 @@ them in parent class but we can do so in case of text */
     }
 }
 
-
 /* skills */
-
 .skills-page > p, .projects > p{
     align-self: center;
     font-size: 40px ;
@@ -375,7 +371,6 @@ them in parent class but we can do so in case of text */
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
-
 }
 
 .skills-graph > p{
@@ -398,9 +393,8 @@ them in parent class but we can do so in case of text */
     overflow: hidden;
     height: 20px;
     align-items: center;
-     
-    
-  }
+         
+}
 
 .skills {
     width: 100%;
@@ -548,8 +542,7 @@ them in parent class but we can do so in case of text */
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
     margin-top: 100px;
     
 
@@ -560,7 +553,7 @@ them in parent class but we can do so in case of text */
 
 }
 .insta{
-    margin-right: none;
+    margin-right: 0px;
 }
 
 
