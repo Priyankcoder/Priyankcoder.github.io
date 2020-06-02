@@ -8,6 +8,47 @@
 /* rgb(114, 250, 234) bs*/
 
 }
+/* Mobile version */
+@media only screen and (max-width: 400px){
+    .nav{
+        font-size: 12px;
+    }
+
+    #name{
+        font-family: 'Righteous', cursive;
+        font-weight: 300;
+        
+    }
+    #txt1{
+        font-size: 20px;
+        animation: fadein 5.5s linear 0s 1 normal forwards;
+    
+    }
+    #txt2{
+        font-size: 30px;
+        margin-top: 10px;
+    
+    }
+    #txt3{
+        font-size: 20px;
+    
+    }
+
+}
+
+/* Tablet version */
+@media only screen and (min-width: 401px) and 
+(max-width: 960px){
+    .nav{
+        font-size: 15px;
+    }
+
+} 
+
+/* Desktop Version */
+@media only screen and (min-width: 961px){
+
+}
 
 #name,.skills-page > p, .projects > p, .skills-graph
 .html,.css,.js,.django,.projects,.about > p:first-child,
@@ -42,7 +83,7 @@
 /* Navigation Bar */
 .nav{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 90%;
     position: fixed;
@@ -58,7 +99,7 @@
 /* > sign use to access real child 
 (not grand child) of parent*/
 .nav > div{
-    margin-right: 100px;
+    /* margin-right: 100px; */
     transition: all 2s linear;
 
 }
@@ -90,12 +131,13 @@ them in parent class but we can do so in case of text */
     width: 100%;
     /* border: 2px solid darkgreen; */
     display: flex;
-    margin-top: 5%;
+    /* margin-top: 5%; */
     flex-direction: row;
     justify-content: flex-end;
     color: rgb(114, 250, 234);
     /* color: rgb(114, 250, 234); */
     /* background-color: rgb(17, 16, 16); */
+    /* background-image: url(images/home.svg); */
     
     
 
@@ -114,37 +156,19 @@ them in parent class but we can do so in case of text */
     flex-direction: column;
     justify-content: center;
     /* border: 2px solid orange; */
-    width: 60%;
+    width: 50%;
     /* align-self: center; */
     text-align: center;
-    align-self: flex-start;
+    align-self: center;
     /* margin-top: 100px; */
-    height: 400px;
+    /* height: 400px; */
     /* text-shadow: 2px 2px rgb(66, 66, 66); */
     /* transition: color 4s linear; */
     
 
     color: rgb(0, 199, 176);
 }
-#name{
-    font-family: 'Righteous', cursive;
-    font-weight: 400;
-    
-}
-#txt1{
-    font-size: 30px;
-    animation: fadein 5.5s linear 0s 1 normal forwards;
 
-}
-#txt2{
-    font-size: 50px;
-    margin-top: 10px;
-
-}
-#txt3{
-    font-size: 20px;
-
-}
 /* viewport -> intro -> intro-img  */
 .intro-img{
     display: flex;
@@ -169,7 +193,7 @@ them in parent class but we can do so in case of text */
     /* border: 2px solid violet; */
     flex-direction: column;
     /* justify-content: space-evenly; */
-    margin-top: 100px;
+    margin-top: 30px;
     
 }
 .skills-page > p, .projects > p{
