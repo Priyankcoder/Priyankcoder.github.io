@@ -48,24 +48,24 @@ let skills = document.querySelector(".progress");
 // console.table(skills);
 
 let finalh = () => {
-  html.style.width = "80%";
+  html.style.width = "95%";
   html.style.transition = "all 2s linear";
-  setTimeout(()=>html.innerHTML = "<p>80%</p>" ,2000);
+  // setTimeout(()=>html.innerHTML = "<p>80%</p>" ,2000);
   }
 let finalc = () => {
-  css.style.width = "70%";
+  css.style.width = "95%";
   css.style.transition = "all 2s linear";
-  setTimeout(()=>css.innerHTML = "<p>70%</p>" ,2000);
+  // setTimeout(()=>css.innerHTML = "<p>70%</p>" ,2000);
   }
 let finalj = () => {
-  js.style.width = "60%";
+  js.style.width = "85%";
   js.style.transition = "all 2s linear";
-  setTimeout(()=>js.innerHTML = "<p>60%</p>" ,2000);
+  // setTimeout(()=>js.innerHTML = "<p>60%</p>" ,2000);
   }
 let finald = () => {
-  django.style.width = "50%";
+  django.style.width = "85%";
   django.style.transition = "all 2s linear";
-  setTimeout(()=>django.innerHTML = "<p>50%</p>" ,2000);
+  // setTimeout(()=>django.innerHTML = "<p>50%</p>" ,2000);
   }
 
 function progressbar(){

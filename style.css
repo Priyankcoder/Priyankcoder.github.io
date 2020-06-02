@@ -414,16 +414,16 @@ them in parent class but we can do so in case of text */
 }
 
 .html{
-    width: 80%;
+    width: 95%;
 }
 .css{
-    width: 70%;
+    width: 95%;
 }
 .js{
-    width: 60%
+    width: 85%
 }
 .django{
-    width: 50%
+    width: 85%
 }
 
 
