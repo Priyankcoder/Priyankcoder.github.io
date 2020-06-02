@@ -525,6 +525,7 @@ them in parent class but we can do so in case of text */
     cursor: pointer;
     text-decoration: none;
     color: rgb(114, 250, 234);
+    outline: none;
    
 }
 .mail:active{
