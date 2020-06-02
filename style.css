@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Roboto Slab', serif;
+    font-size: 10px;
 
 /* alternate: rgb(68, 150, 140)  gs*/
 /* rgb(114, 250, 234) bs*/
@@ -14,6 +15,137 @@
         font-size: 12px;
     }
 
+ 
+    .intro{
+        display: flex;
+        width: 100%;
+        /* border: 2px solid darkgreen; */
+        /* display: flex; */
+        margin-top: 100px;
+        flex-direction: column;
+        justify-content: center;
+        color: rgb(114, 250, 234);
+        align-items: flex-start;
+        margin-left: 40px;
+        
+        
+    }
+    .intro-txt{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        text-align: center;
+        /* align-self: center; */
+        color: rgb(0, 199, 176);
+    }
+    #name{
+        font-family: 'Righteous', cursive;
+        font-weight: 300;
+        
+    }
+    #txt1{
+        font-size: 30px;
+        animation: fadein 5.5s linear 0s 1 normal forwards;
+        margin-left: 30px;
+    }
+    #txt2{
+        display: flex;
+        font-size: 40px;
+        margin-top: 20px;
+        flex-direction: column;
+        justify-content: center;
+        
+
+    
+    }
+    #txt3{
+        font-size: 20px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+    .intro-img{
+        display: none;
+        width: 0%;
+    }
+    #img{
+        width: 0%;
+    }
+    
+    .skills-img{
+        display: none;
+    }
+    .skills-graph{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 70%;
+        font-size: 20px;
+        /* border: 2px solid black; */
+        
+    }
+    .insta, .github, .linkedin{
+        display: flex;
+        width: 10%;
+        justify-content: center;
+        overflow: hidden;
+        margin-right: 20px;
+    }
+    .skills-page{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        
+    }
+    
+
+}
+
+/* Tablet version */
+@media only screen and (min-width: 401px) and 
+(max-width: 960px){
+    .nav{
+        font-size: 15px;
+    }
+    .intro-img{
+        display: flex;
+        /* border: 2px solid black; */
+        width: 40%;
+        height: 500px;
+        overflow: hidden;
+        margin-top: 40px;
+    
+    }
+    
+    #img{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .intro{
+        display: flex;
+        width: 100%;
+        /* border: 2px solid darkgreen; */
+        display: flex;
+        /* margin-top: 5%; */
+        flex-direction: row;
+        justify-content: flex-end;
+        color: rgb(114, 250, 234);
+        
+    }
+    .intro-txt{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        text-align: center;
+        align-self: center;
+        color: rgb(0, 199, 176);
+    }
     #name{
         font-family: 'Righteous', cursive;
         font-weight: 300;
@@ -25,7 +157,7 @@
     
     }
     #txt2{
-        font-size: 30px;
+        font-size: 40px;
         margin-top: 10px;
     
     }
@@ -33,22 +165,135 @@
         font-size: 20px;
     
     }
-
-}
-
-/* Tablet version */
-@media only screen and (min-width: 401px) and 
-(max-width: 960px){
-    .nav{
-        font-size: 15px;
+    .skills-img{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        overflow: hidden;
+        align-items: center;
+    }
+    .skills-img img{
+        width: 130%;
+    
+    }
+    .skills-graph{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 30%;
+        font-size: 20px;
+        /* border: 2px solid black; */
+        
+    }
+    .insta, .github, .linkedin{
+        display: flex;
+        width: 3%;
+        justify-content: center;
+        overflow: hidden;
+        margin-right: 20px;
+    }
+    .skills-page{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        
     }
 
 } 
 
 /* Desktop Version */
 @media only screen and (min-width: 961px){
+    .intro-img{
+        display: flex;
+        /* border: 2px solid black; */
+        width: 40%;
+        height: 500px;
+        overflow: hidden;
+        margin-top: 40px;
+    
+    }
+    
+    #img{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .intro{
+        display: flex;
+        width: 100%;
+        /* border: 2px solid darkgreen; */
+        display: flex;
+        /* margin-top: 5%; */
+        flex-direction: row;
+        justify-content: flex-end;
+        color: rgb(114, 250, 234);
+        
+    }
+    .intro-txt{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        text-align: center;
+        align-self: center;
+        color: rgb(0, 199, 176);
+    }
+    #name{
+        font-family: 'Righteous', cursive;
+        font-weight: 300;
+        
+    }
+    #txt1{
+        font-size: 20px;
+        animation: fadein 5.5s linear 0s 1 normal forwards;
+    
+    }
+    #txt2{
+        font-size: 40px;
+        margin-top: 10px;
+    
+    }
+    #txt3{
+        font-size: 20px;
+    
+    }
+    .skills-img{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        overflow: hidden;
+        align-items: center;
+    }
+    .skills-img img{
+        width: 130%;
+    
+    }
+    .skills-graph{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 30%;
+        font-size: 20px;
+        /* border: 2px solid black; */
+        
+    }
+    .insta, .github, .linkedin{
+        display: flex;
+        width: 3%;
+        justify-content: center;
+        overflow: hidden;
+        margin-right: 20px;
+    }
+    .skills-page{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        
+    }
 
 }
+
 
 #name,.skills-page > p, .projects > p, .skills-graph
 .html,.css,.js,.django,.projects,.about > p:first-child,
@@ -66,7 +311,6 @@
 
 .site{
     background-color: black;
-    /* background-color: aliceblue; */
 }
 
 
@@ -77,7 +321,8 @@
     margin: 0 auto;
     width: 90%;
     background-color: black;
-    /* background-color: rgb(216, 224, 231); */
+    
+   
 }
 
 /* Navigation Bar */
@@ -126,22 +371,7 @@ them in parent class but we can do so in case of text */
 
 
 /* viewport -> intro */
-.intro{
-    display: flex;
-    width: 100%;
-    /* border: 2px solid darkgreen; */
-    display: flex;
-    /* margin-top: 5%; */
-    flex-direction: row;
-    justify-content: flex-end;
-    color: rgb(114, 250, 234);
-    /* color: rgb(114, 250, 234); */
-    /* background-color: rgb(17, 16, 16); */
-    /* background-image: url(images/home.svg); */
-    
-    
 
-}
 
 /* viewport -> intro -> intro-txt  */
 @keyframes fadein{
@@ -151,51 +381,14 @@ them in parent class but we can do so in case of text */
         /* text-shadow: 2px 2px rgb(66, 66, 66); */
     }
 }
-.intro-txt{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* border: 2px solid orange; */
-    width: 50%;
-    /* align-self: center; */
-    text-align: center;
-    align-self: center;
-    /* margin-top: 100px; */
-    /* height: 400px; */
-    /* text-shadow: 2px 2px rgb(66, 66, 66); */
-    /* transition: color 4s linear; */
-    
 
-    color: rgb(0, 199, 176);
-}
 
 /* viewport -> intro -> intro-img  */
-.intro-img{
-    display: flex;
-    /* border: 2px solid black; */
-    width: 40%;
-    height: 500px;
-    overflow: hidden;
 
-}
-
-#img{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
 
 
 /* skills */
-.skills-page{
-    display: flex;
-    /* border: 2px solid violet; */
-    flex-direction: column;
-    /* justify-content: space-evenly; */
-    margin-top: 30px;
-    
-}
+
 .skills-page > p, .projects > p{
     align-self: center;
     font-size: 40px ;
@@ -207,30 +400,12 @@ them in parent class but we can do so in case of text */
     justify-content: space-evenly;
 
 }
-.skills-graph{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 30%;
-    font-size: 20px;
-    border: 2px solid black;
-    
-}
+
 .skills-graph > p{
    margin-top: auto;
 
 }
-.skills-img{
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    overflow: hidden;
-    align-items: center;
-}
-.skills-img img{
-    width: 130%;
 
-}
 .skills-page-title{
     margin-bottom: 50px;
 }
@@ -402,13 +577,7 @@ them in parent class but we can do so in case of text */
     
 
 }
-.insta, .github, .linkedin{
-    display: flex;
-    width: 3%;
-    justify-content: center;
-    overflow: hidden;
-    margin-right: 20px;
-}
+
 .social img{
     width: 100%;
 
