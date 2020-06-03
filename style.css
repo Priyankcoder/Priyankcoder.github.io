@@ -22,8 +22,8 @@
         flex-direction: column;
         justify-content: center;
         color: rgb(114, 250, 234);
-        align-items: flex-start;
-        margin-left: 40px;
+        text-align: center;
+
         
         
     }
@@ -31,9 +31,9 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 50%;
         text-align: center;
         color: rgb(0, 199, 176);
+        
     }
     #name{
         font-family: 'Righteous', cursive;
@@ -41,9 +41,11 @@
         
     }
     #txt1{
+        width: 100%;
         font-size: 30px;
         animation: fadein 5.5s linear 0s 1 normal forwards;
-        margin-left: 30px;
+        text-align: center;
+        align-self: center;
     }
     #txt2{
         display: flex;
@@ -140,7 +142,7 @@
         color: rgb(0, 199, 176);
     }
     #name{
-        font-family: 'Righteous', cursive;
+        font-family: 'Righteous',cursive;
         font-weight: 300;
         
     }
