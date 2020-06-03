@@ -33,7 +33,6 @@
         justify-content: center;
         text-align: center;
         color: rgb(0, 199, 176);
-        
     }
     #name{
         font-family: 'Righteous', cursive;
@@ -46,11 +45,13 @@
         animation: fadein 5.5s linear 0s 1 normal forwards;
         text-align: center;
         align-self: center;
+        /* margin-top: 10px; */
+
     }
     #txt2{
         display: flex;
         font-size: 40px;
-        margin-top: 20px;
+        margin-top: 50px;
         flex-direction: column;
         justify-content: center;
         
@@ -59,7 +60,7 @@
     }
     #txt3{
         font-size: 20px;
-        margin-top: 10px;
+        margin-top: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
