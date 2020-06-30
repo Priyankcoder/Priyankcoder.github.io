@@ -301,7 +301,9 @@
 
 
 .site{
-    background-color: black;
+    /* background-color: black; */
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
 }
 
 
@@ -311,8 +313,10 @@
     flex-direction: column;
     margin: 0 auto;
     width: 80%;
-    background-color: black;
+    /* background-color: black; */
     align-items: center;
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
     
 }
 
@@ -325,12 +329,13 @@
     position: fixed;
     height: 50px;
     color: rgb(114, 250, 234); 
-    background-color: rgb(19, 17, 17);
+    /* background-color: rgb(19, 17, 17); */
     text-decoration: none;
     border: 1px solid 
     rgb(114, 250, 234);
     border-radius: 10px;
-
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
 }
 
 /* > sign use to access real child 
@@ -434,7 +439,7 @@ them in parent class but we can do so in case of text */
     display: flex;
     flex-direction: column;
     width: 100%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     justify-content: space-evenly;
     margin-top: 100px;
     justify-content: space-between;
