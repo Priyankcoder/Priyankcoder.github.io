@@ -253,19 +253,22 @@
     .skills-img{
         display: flex;
         flex-direction: column;
-        width: 60%;
+        /* width: 80%; */
         overflow: hidden;
         align-items: center;
+        
     }
     .skills-img img{
-        width: 130%;
+        width: 150%;
+        margin-top: auto;
+        margin-bottom: auto;
     
     }
     .skills-graph{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        width: 30%;
+        width: 50%;
         font-size: 20px;
         
     }
@@ -280,14 +283,15 @@
         display: flex;
         flex-direction: column;
         margin-top: 30px;
+        width: 100%;
         
     }
 
 }
 
 
-#name,.skills-page > p, .projects > p, .skills-graph
-.html,.css,.js,.django,.projects,.about > p:first-child,
+#name,.skills-page > p, .projects > p, .skills-graph,
+.projects,.about > p:first-child,
 .contact-text> p:first-child,.skills-graph>p
 {
    
@@ -312,7 +316,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     /* background-color: black; */
     align-items: center;
     background-color: #000000;
@@ -325,7 +329,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 90%;
+    width: 95%;
     position: fixed;
     height: 50px;
     color: rgb(114, 250, 234); 
@@ -379,7 +383,9 @@ them in parent class but we can do so in case of text */
 .skills-page-content{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 100%;
+
 }
 
 .skills-graph > p{
@@ -401,28 +407,25 @@ them in parent class but we can do so in case of text */
     border-radius: 10px;
     box-shadow: 2px 0px 2px rgb(66, 66, 66);
     overflow: hidden;
-    height: 20px;
+    height: 3vh;
     align-items: center;
          
 }
 
 .skills {
-    width: 100%;
+    width: var(--width);
     text-align: right;
-    height: 20px;
-    
-  }
-
-.html,.css,.js,.django{
+    height: 100%;
     background-color:rgb(114, 250, 234);
     border-radius: 10px;
     box-shadow: 4px 0px 1px rgb(66, 66, 66);
     font-size: 15px;
     
-}
+  }
 
-.html{
-    width: 95%;
+
+/* .bar{
+    width: var(--width);
 }
 .css{
     width: 95%;
@@ -433,6 +436,10 @@ them in parent class but we can do so in case of text */
 .django{
     width: 85%
 }
+.mongodb{
+    width: 85%
+} */
+
 
 
 .projects{
@@ -580,5 +587,25 @@ them in parent class but we can do so in case of text */
     border-top: 1px solid rgb(102, 218, 204);
     font-size: 10px;
     letter-spacing: 2px;
+
+}
+
+#icon{
+    color: rgb(102, 218, 204);
+}
+
+@keyframes animate{
+    from {
+        width: 0
+    }
+    to {
+        width: var(--width);
+    }
+
+}
+
+.animate{
+    transition: width ease-in;
+    animation: animate 4s 1;
 
 }
