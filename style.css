@@ -459,7 +459,7 @@ them in parent class but we can do so in case of text */
     margin: 30px;
     border-radius: 50px;
     /* border: 1px solid rgb(31, 31, 31); */
-    box-shadow: 6px 4px 4px rgb(68, 141, 132);
+    box-shadow: 6px 4px 2px rgb(68, 141, 132);
     color: aliceblue;
     text-align: center;
     line-height: 25px;
@@ -467,7 +467,7 @@ them in parent class but we can do so in case of text */
 
 }
 .pr-img{
-    
+    border-bottom: 2px solid rgb(102, 218, 204);
     height: 80%;    
 
 }
