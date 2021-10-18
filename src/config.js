@@ -3,6 +3,18 @@ module.exports = {
 
   socialMedia: [
     {
+      name: 'Linkedin',
+      url: 'https://www.linkedin.com/in/priyankcoder',
+    },
+    {
+      name: 'Codeforces',
+      url: 'https://codeforces.com/profile/priyank010',
+    },
+    {
+      name: 'Codechef',
+      url: 'https://www.codechef.com/users/priyank010',
+    },
+    {
       name: 'GitHub',
       url: 'https://github.com/priyankcoder',
     },
@@ -13,14 +25,6 @@ module.exports = {
     {
       name: 'Twitter',
       url: 'https://twitter.com/',
-    },
-    {
-      name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/priyankcoder',
-    },
-    {
-      name: 'Codepen',
-      url: 'https://codepen.io/',
     },
   ],
 

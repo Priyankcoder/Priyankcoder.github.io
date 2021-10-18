@@ -52,12 +52,12 @@ const Loader = ({ finishLoading }) => {
         easing: 'easeInOutQuart',
         strokeDashoffset: [anime.setDashoffset, 0],
       })
-      .add({
-        targets: '#logo #B',
-        duration: 700,
-        easing: 'easeInOutQuart',
-        opacity: 1,
-      })
+      // .add({
+      //   targets: '#logo #B',
+      //   duration: 700,
+      //   easing: 'easeInOutQuart',
+      //   opacity: 1,
+      // })
       .add({
         targets: '#logo',
         delay: 500,
