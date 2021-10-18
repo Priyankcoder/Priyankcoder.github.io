@@ -22,10 +22,10 @@ module.exports = {
       name: 'Instagram',
       url: 'https://www.instagram.com/curious_priyank',
     },
-    {
-      name: 'Twitter',
-      url: 'https://twitter.com/',
-    },
+    // {
+    //   name: 'Twitter',
+    //   url: 'https://twitter.com/',
+    // },
   ],
 
   navLinks: [
